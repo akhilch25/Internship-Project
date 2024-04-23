@@ -1,0 +1,331 @@
+.status table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.status th, td {
+    padding: 5px;
+    /* text-align: center; */
+    margin: 0%;
+}
+#search-bar {
+    width: 70%;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+.status  {
+    max-width: 800px; /* Set your desired maximum width */
+    width: 100%;
+    margin: 0px auto;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-bottom: 5%; */
+    /* height: 65vh; */
+}
+
+.status th {
+    background-color: #00866E;
+    color: #ddd;
+}
+
+.status1 {
+    color: black; /* Change color based on your status design */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.status tr {
+    border-bottom: 1px solid #ddd;
+    transition: color 0.1s;
+    cursor: pointer;
+    color: black;
+}
+
+.status tr:last-child {
+    border-bottom: none;
+}
+
+.status tr:nth-child(even) {
+    background-color: #acf0c58a; 
+}
+
+.status tr:nth-child(odd) {
+    background-color: #afd0bb8a;
+}
+
+.status tr:hover{
+    background-color: #00866E;
+    color: white;
+}
+
+.status tr:hover .pi-trash, .status tr:hover .pi-check, .status tr:hover .pi-eye{
+    color: white;
+}
+
+.p-datatable .p-sortable-column .p-sortable-column-icon {
+    color: white;
+}
+
+.p-datatable .p-sortable-column .p-column-title {
+    color: white;
+    padding-left: 10px;  
+}
+
+/* h2{
+    text-align: center;
+    color: white;
+} */
+
+.dropdown {
+    background-color: #00866E;
+    color: white;
+    width: fit-content;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: all 0.1s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dropdown:hover {
+    background-color: white;
+    color: #00866E;
+    border: 1px solid #00866E;
+}
+
+.dropdown-content {
+    background-color: white;
+    color: #00866E;
+}
+
+.p-paginator {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%; 
+    background-color: #f1f1f18a;
+    margin-right: 2%;
+  }
+  
+.p-paginator .p-paginator-pages {
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+
+.p-paginator .p-paginator-page {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #00866E;
+    color: #00866E;
+    cursor: pointer;
+    transition: background-color 0.1s, color 0.1s;
+    font-size: small;
+}
+
+.p-paginator .p-paginator-page:hover {
+    background-color: #00866E;
+    color: white;
+}
+
+.p-paginator .p-paginator-page:focus {
+    background-color: #00866E;
+    color: white;
+}
+
+.p-paginator .p-paginator-page.p-highlight {
+    background-color: #00866E;
+    color: white;
+}
+  
+
+.custom-card-overlay {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 2;
+}
+
+::placeholder {
+    font-size: 13px;
+  }
+
+.custom-card {
+    z-index: 2; 
+    width: 400px;
+    color: #183b1b;
+    background-color: #d3e2df;
+    padding: 20px; 
+    border-radius: 20px; 
+    font-weight: bold;
+}
+
+.action {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.action .pi-eye {
+    flex: 1;
+    transition: color 0.1s;
+}
+
+.action .pi-check {
+    flex: 1;
+    color: #00866E;
+    transition: color 0.1s;
+}
+
+.action .pi-trash {
+    flex: 1;
+    color: red;
+    transition: color 0.1s;
+}
+
+.close {
+    background-color: rgb(255, 46, 46);
+    color: white;
+    border-width: 0;
+    width: fit-content;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    margin-left: 120px;
+    transition: box-shadow 0.5s;
+}
+
+.close:hover {
+    box-shadow: 0 12px 16px 0 rgba(255, 46, 46, 0.24)
+}
+
+.approve {
+    background-color: rgb(0, 133, 108);
+    color: white;
+    border-width: 0;
+    width: fit-content;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    transition: backgroud-color 0.1s, color 0.1s;
+}
+
+.approve:hover {
+    background-color: white;
+    color: rgb(0, 133, 108);
+}
+
+.reject {
+    background-color: rgb(255, 46, 46);
+    color: white;
+    border-width: 0;
+    width: fit-content;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    transition: backgroud-color 0.1s, color 0.1s;
+}
+
+.reject:hover {
+    background-color: white;
+    color: rgb(255, 46, 46);
+}
+
+.page-heading {
+    margin: 15px 0px;
+    padding: 0px 180px;
+}
+
+.page-heading h2 {
+    color: #00866E;
+    display: inline;
+    text-align: center;
+    margin-left: 27%;
+    vertical-align: middle; 
+}
+
+.view {
+    text-decoration: none;
+    color: black;
+}
+
+view:hover {
+    color: white;
+}
+
+.pi-times {
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.patient-status {
+    display: flex;
+    align-items: center;
+}
+
+.patient-status h3 {
+    flex: 1;
+}
+
+.patient-status .pi-times {
+    flex: 0;
+} 
+
+@media screen and (max-width: 805px) {
+    .dropdown {
+        width:fit-content;
+    }
+
+    .page-heading {
+        padding: 0px 100px;
+    }
+
+    .page-heading h2 {
+        font-size: 25px;
+        margin-left: 20%;
+    }
+
+    .action .pi-eye {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .action .pi-check {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .action .pi-trash {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .action {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last 
+    {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}

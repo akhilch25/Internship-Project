@@ -1,0 +1,135 @@
+.navbar {
+    background-color: #00866E ;
+    padding: 15px;
+    display: flex;
+    justify-content:space-between;
+    align-items: c++enter;
+    width: 100vw;
+    overflow: hidden;
+    
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .logo img{
+    width: 100px;
+    height:auto;
+    margin-top:-20px;
+    margin-bottom: -30px;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px; 
+    transition: font-size 0.3s ease;
+    padding-left: 20px;     
+    cursor: pointer;
+  }
+  
+  .navdropdown-toggle {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: font-size 0.3s ease;
+  }
+  
+  .navdropdown-toggle:hover {
+    font-size: 21px;
+  }
+  
+  .navdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00866E;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .navdropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  .navdropdown:hover .navdropdown-content {
+    display: block;
+  }
+  .nav-links a:hover{
+    font-size: 21px;
+  }
+  
+  .menu-icon {
+    display: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgb(0, 134, 110);
+    border: none;
+  }
+  
+  @media screen and (max-width: 881px) { 
+    .nav-links a, .navdropdown-toggle {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 805px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position:absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background-color:  #00866E ;
+      padding: 15px;
+      z-index: 1;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-links a {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+  
+    .navbar {
+      flex-direction: row;
+    }
+  
+    .logo {
+      margin-bottom: 8px;
+    }
+  
+    .menu-icon {
+      display: block;
+      margin-right: 10px;
+    }
+
+    .navdropdown:hover .navdropdown-content {
+      display: block;
+    }
+
+    .navdropdown-toggle {
+      padding: 6px 0px;
+      font-size: 1.2rem;
+    }
+
+  }
+  
+  

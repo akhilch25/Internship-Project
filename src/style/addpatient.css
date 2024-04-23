@@ -1,0 +1,167 @@
+  .button-1 {
+    background-color: #07945c;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    margin-left: 5px;
+    width: 200px;
+    line-height: 20px;
+    list-style: none;
+    margin-bottom:20px;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-1:hover,
+  .button-1:focus {
+    background-color: #05382e;
+  }
+  
+  input[type="radio"]{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+
+
+
+   .addform{
+    /* background-color: antiquewhite; */
+    width:80%;
+    height: 520px;
+    margin:10px auto;
+    border-radius: 15px;
+    display: flex;
+   }
+
+   .heading {
+    text-align: center;
+    color:#00866E;
+  }
+
+  .form-left {
+    padding-left: 100px;
+  }
+  
+.form-left,
+.form-right {
+  flex: 1;
+  padding: 20px;
+  background-color: #c3ffd7d2; /* Example background color for form-right */
+}
+
+.addhotelinp,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 2px;
+    outline: 2px;
+    padding: 10px;
+    width: 80%;
+    background-color: #eff3ef;
+    color: #151616;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+
+  .addhotelinp,
+  select {
+    border: solid 0.2px rgba(158, 158, 158, 0.584);
+  }
+  
+  .fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+
+  .required {
+    color: red; 
+    margin-left: 4px; 
+  }
+
+  .p-dropdown{
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 2px;
+    outline: 2px;
+    padding: 0px;
+    width: 84%;
+    background-color: #eff3ef;
+    color: #151616;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  }
+
+  .p-calendar {
+    padding: 0%;
+    background-color: #eff3ef;
+  }
+
+  .p-dropdown-items-wrapper{
+    background-color: #eff3ef;
+    width:100%;
+  }
+
+  .p-dropdown-item{
+    padding: 6px;
+  }
+
+
+  .p-datepicker{
+    background-color: #eef1f0;
+    color: #070707;
+  }
+  
+  
+
+  .p-monthpicker-month{
+    background-color: #eef1f0;
+    color: #070707;
+    padding: 5px;
+  }
+
+
+@media (max-width: 805px) {
+  .addform {
+    flex-direction: column; /* Change to column layout for mobile view */
+  }
+  /* .addpatient{
+    background-color: darkseagreen;
+    height: 100%;
+  } */
+}
+
+.formerror {
+  color: rgb(255, 78, 78);
+  font-size: small;
+  padding-left: 10px;
+}  
+  
